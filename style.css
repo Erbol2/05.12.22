@@ -132,6 +132,15 @@ h1 {
 .topbar.topbar-dark {
   background-color: rgba(0, 0, 0, 0.901);
 }
-.nav.nav-dark {
+.nav.nav-dark .nav-link {
   color: white;
 }
+.nav.nav-dark .nav-link:hover {
+  color: grey;
+}
+.nav.nav-dark .nav-link.active {
+  color: black;
+  background-color: white;
+}
+
+
