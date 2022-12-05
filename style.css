@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+}
+body {
+  font-family: "Permanent Marker", cursive;
+  background-image: url(/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(3, 3, 77);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 0 blue;
+  font-size: 50px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^="col"] {
+  padding: 0 10px;
+}
+.col-1 {
+  flex: 8.3% 0 0;
+}
+.col-2 {
+  flex: 16.6% 0 0;
+}
+.col-3 {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.col-4 {
+  /* 100% / 12 * 4 */
+  flex-basis: 33.3%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.col-5 {
+  flex: 41.6% 0 0;
+}
+.col-6 {
+  flex: 50% 0 0;
+}
+.col-7 {
+  flex: 58.3% 0 0;
+}
+.col-8 {
+  flex: 66.6% 0 0;
+}
+.col-9 {
+  flex: 75% 0 0;
+}
+.col-10 {
+  flex: 83% 0 0;
+}
+.col-11 {
+  flex: 91.6% 0 0;
+}
+.col-12 {
+  flex: 100% 0 0;
+}
+.card {
+  background-color: rgb(44, 158, 158);
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px black;
+  margin-bottom: 20px;
+  font-family: "Permanent Marker", cursive;
+  border-radius: 10px;
+  position: relative;
+}
+.card::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 10px;
+  transition: all 400ms;
+  width: 0%;
+  background-color: rgba(36, 36, 110, 0.807);
+}
+.card:hover::before {
+  width: 100%;
+}
+
+.card .card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card .card-content {
+  padding: 10px 15px;
+  text-shadow: 1px 1px 0 blue;
+}
+.card:hover {
+  transform: scale(1.04);
+}
