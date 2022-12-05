@@ -1,15 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
 }
-body {
-  font-family: "Permanent Marker", cursive;
-  background-image: url(/space.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(3, 3, 77);
-}
-
 .container {
   max-width: 980px;
   margin: 0 auto;
